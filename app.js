@@ -11,7 +11,6 @@ app.use(express.json());
 
 const uri = 'mongodb+srv://user:user@cluster0.aqy7s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
 app.use('/', apiRoutes);
 
 app.listen(port, () => {
